@@ -1,26 +1,43 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy - PixShrink</title>
-    <style>
+        <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #ffffff;
+            --text: #222222;
+            --heading: #111111;
+            --muted: #555555;
+            --rule: #eeeeee;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f1115;
+                --text: #e5e7eb;
+                --heading: #f3f4f6;
+                --muted: #a6b0c0;
+                --rule: #2b3240;
+            }
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
             margin: 24px;
-            color: #222;
-            background: #fff;
+            color: var(--text);
+            background: var(--bg);
             max-width: 900px;
         }
         h1, h2 {
-            color: #111;
+            color: var(--heading);
         }
         h1 {
             margin-bottom: 0.2rem;
         }
         .meta {
-            color: #555;
+            color: var(--muted);
             margin-bottom: 1.5rem;
         }
         ul, ol {
@@ -29,7 +46,7 @@
         hr {
             margin: 2rem 0;
             border: none;
-            border-top: 1px solid #eee;
+            border-top: 1px solid var(--rule);
         }
     </style>
 </head>
@@ -201,3 +218,4 @@
 </ul>
 </body>
 </html>
+
