@@ -49,6 +49,14 @@
             border-top: 1px solid var(--rule);
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('a[href^="https://policies.google.com"]').forEach(function (link) {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener noreferrer");
+            });
+        });
+    </script>
 </head>
 <body>
 <h1>Privacy Policy</h1>
@@ -218,5 +226,6 @@
 </ul>
 </body>
 </html>
+
 
 
